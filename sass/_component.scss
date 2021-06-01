@@ -1,0 +1,53 @@
+////////////////////////////////////////
+////// LOGO
+.logo {
+  height: 6rem;
+  margin-left: 3rem;
+}
+
+////////////////////////////////////////
+////// SEARCH
+.search {
+  margin-right: auto;
+  margin-left: auto;
+  height: 3.5rem;
+  flex: 0 0 50%;
+  display: flex;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-grey-light-2);
+    color: inherit;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.2s;
+    margin-right: -3.5rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-3);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+  }
+}
